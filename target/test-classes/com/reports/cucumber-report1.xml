@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="30.294944">
+<testcase classname="Opencart login functionality module and Order placement Test automation scripts" name="Verify user is able to hit the Opencart application" time="17.394811">
+<system-out><![CDATA[Given User should launch the opencart application...........................passed
+Then User should see opencart logo present in the header....................passed
+And User should see My account text present in the page.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Opencart login functionality module and Order placement Test automation scripts" name="Verify user is able to login the application" time="4.099084">
+<system-out><![CDATA[When User enter the email address 'abcd@gmail.com' in the email field.......passed
+When User enter the password 'Testone1' in the password field...............passed
+When User click on the login button.........................................passed
+Then User should see My Account in the Page.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Opencart login functionality module and Order placement Test automation scripts" name="User is able to place order in the application" time="8.801049">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.cucumber.testscripts.LoginAndOrderPlacement.user_clicks_on_checkout(LoginAndOrderPlacement.java:83)&#13;&#10;&#9;at ✽.User clicks on checkout(src/test/java/com/cucumber/features/Automation.feature:18)&#13;&#10;"><![CDATA[When User clicks product they want and it should lead to the respective page.passed
+And User clicks on a particular model of the product........................passed
+And User clicks on add to cart..............................................passed
+And User clicks on checkout.................................................failed
+
+StackTrace:
+java.lang.NullPointerException
+	at com.cucumber.testscripts.LoginAndOrderPlacement.user_clicks_on_checkout(LoginAndOrderPlacement.java:83)
+	at ✽.User clicks on checkout(src/test/java/com/cucumber/features/Automation.feature:18)
+]]></failure>
+</testcase>
+</testsuite>
